@@ -5,7 +5,10 @@ import jakarta.xml.bind.annotation.*;
 import java.util.List;
 
 
-
+/**
+ * Represents a student with personal data and a list of assigned courses.
+ * Mapped to the {@code <student>} element.
+ */
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Student {
 
@@ -17,10 +20,10 @@ public class Student {
 
     @XmlElement(name = "last-name")
     private String lastName;
-
+    /** Whether the student is currently active. */
     @XmlElement(name = "status")
     private boolean status;
-
+    /** Grade point average of the student. */
     @XmlElement(name = "gpa")
     private float gpa;
 
@@ -28,7 +31,7 @@ public class Student {
     @XmlElement(name = "course")
     private List<Course> courses;
 
-
+    /** Creates an empty student. Required by JAXB. */
     public Student() {
     }
 

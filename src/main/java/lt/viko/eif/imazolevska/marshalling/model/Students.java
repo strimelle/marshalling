@@ -4,7 +4,10 @@ import jakarta.xml.bind.annotation.*;
 
 import java.util.ArrayList;
 import java.util.List;
-
+/**
+ * Root object of the XML document that holds the list of students.
+ * Mapped to the {@code <students>} element.
+ */
 @XmlRootElement (name = "students")
 @XmlAccessorType(XmlAccessType.FIELD)
 public class Students {

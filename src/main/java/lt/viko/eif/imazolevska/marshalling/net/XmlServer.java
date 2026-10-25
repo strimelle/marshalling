@@ -13,14 +13,27 @@ import java.net.ServerSocket;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
 
+/**
+ * Socket server that sends the students as XML on port 8383.
+ */
+
 @Component
 public class XmlServer {
 
     @Autowired
     private XmlTransformer transformer;
 
-    public void send(Students studentList) throws IOException, JAXBException {
+    /**
+     * Waits for a client, transforms the students to XML,
+     * prints it and sends it to the client.
+     *
+     * @param studentList students to send
+     * @throws IOException if the connection fails
+     * @throws JAXBException if the transformation fails
+     */
 
+    public void send(Students studentList) throws IOException, JAXBException {
+        // accept() blocks until a client connects
         try (
                 ServerSocket server = new ServerSocket(8383);
                 Socket clientSocket = server.accept();

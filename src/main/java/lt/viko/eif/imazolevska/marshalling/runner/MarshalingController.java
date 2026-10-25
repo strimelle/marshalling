@@ -7,6 +7,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 
+/**
+ * REST controller that starts the XML client.
+ */
+
 @RestController
 @RequestMapping("/api")
 public class MarshalingController {
@@ -14,8 +18,15 @@ public class MarshalingController {
     @Autowired
     private XmlClient xmlClient;
 
+    /**
+     * Handles {@code POST /api/client/receive} and starts the client.
+     *
+     * @return confirmation message
+     * @throws Exception if receiving fails
+     */
+
     @PostMapping("/client/receive")
-    public String receive() throws Exception{
+    public String receive() throws Exception {
         xmlClient.receive();
         return "Received.";
     }

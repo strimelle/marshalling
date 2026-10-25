@@ -12,6 +12,10 @@ import java.io.FileReader;
 import java.io.StringReader;
 import java.io.StringWriter;
 
+/**
+ * {@link XmlTransformer} implementation based on JAXB.
+ */
+
 @Service
 public class JaxbXmlTransformer implements XmlTransformer {
 

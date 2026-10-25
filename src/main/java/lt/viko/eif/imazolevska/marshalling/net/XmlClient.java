@@ -15,12 +15,22 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 
+/**
+ * Socket client that receives the students XML from {@link XmlServer}.
+ */
+
 @Component
 public class XmlClient {
 
     @Autowired
     private XmlTransformer transformer;
-    //receive
+    /**
+     * Receives the XML from the server, saves it to {@code received.xml},
+     * transforms it to objects and prints the students.
+     *
+     * @throws IOException if the connection or file writing fails
+     * @throws JAXBException if the transformation fails
+     */
     public void receive() throws IOException, JAXBException {
 
         try (Socket clientSocket = new Socket("localhost", 8383)){
