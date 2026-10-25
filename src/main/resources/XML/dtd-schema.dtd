@@ -3,6 +3,8 @@
 <!ELEMENT id (#PCDATA)>
 <!ELEMENT first-name (#PCDATA)>
 <!ELEMENT last-name (#PCDATA)>
+<!ELEMENT status (#PCDATA)>
+<!ELEMENT gpa (#PCDATA)>
 <!ELEMENT courses (course)*>
 <!ELEMENT course (name)*>
 <!ELEMENT name (#PCDATA)>

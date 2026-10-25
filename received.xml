@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<students>
+    <student>
+        <id>1</id>
+        <first-name>Emma</first-name>
+        <last-name>Johansson</last-name>
+        <status>true</status>
+        <gpa>9.1</gpa>
+        <courses>
+            <course>
+                <name>Introduction to Programming</name>
+            </course>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>2</id>
+        <first-name>Lucas</first-name>
+        <last-name>Martinez</last-name>
+        <status>true</status>
+        <gpa>8.4</gpa>
+        <courses>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+            <course>
+                <name>Software Engineering Principles</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>3</id>
+        <first-name>Olivia</first-name>
+        <last-name>Chen</last-name>
+        <status>true</status>
+        <gpa>9.5</gpa>
+        <courses>
+            <course>
+                <name>Introduction to Programming</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Software Testing and Quality Assurance</name>
+            </course>
+            <course>
+                <name>Cloud Computing</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>4</id>
+        <first-name>Noah</first-name>
+        <last-name>Kowalski</last-name>
+        <status>true</status>
+        <gpa>7.8</gpa>
+        <courses>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+            <course>
+                <name>Software Engineering Principles</name>
+            </course>
+            <course>
+                <name>Cloud Computing</name>
+            </course>
+            <course>
+                <name>Cybersecurity Fundamentals</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>5</id>
+        <first-name>Sophia</first-name>
+        <last-name>Nguyen</last-name>
+        <status>true</status>
+        <gpa>8.9</gpa>
+        <courses>
+            <course>
+                <name>Introduction to Programming</name>
+            </course>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+            <course>
+                <name>Software Engineering Principles</name>
+            </course>
+            <course>
+                <name>Technical Communication</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>6</id>
+        <first-name>Ethan</first-name>
+        <last-name>OBrien</last-name>
+        <status>false</status>
+        <gpa>7.2</gpa>
+        <courses>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+            <course>
+                <name>Software Testing and Quality Assurance</name>
+            </course>
+            <course>
+                <name>Cloud Computing</name>
+            </course>
+            <course>
+                <name>Cybersecurity Fundamentals</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>7</id>
+        <first-name>Ava</first-name>
+        <last-name>Petrov</last-name>
+        <status>true</status>
+        <gpa>9.3</gpa>
+        <courses>
+            <course>
+                <name>Introduction to Programming</name>
+            </course>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Software Engineering Principles</name>
+            </course>
+            <course>
+                <name>Software Testing and Quality Assurance</name>
+            </course>
+            <course>
+                <name>Cloud Computing</name>
+            </course>
+            <course>
+                <name>Technical Communication</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>8</id>
+        <first-name>Mason</first-name>
+        <last-name>Dubois</last-name>
+        <status>false</status>
+        <gpa>6.9</gpa>
+        <courses>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+            <course>
+                <name>Software Testing and Quality Assurance</name>
+            </course>
+            <course>
+                <name>Cybersecurity Fundamentals</name>
+            </course>
+            <course>
+                <name>Technical Communication</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>9</id>
+        <first-name>Isabella</first-name>
+        <last-name>Rossi</last-name>
+        <status>true</status>
+        <gpa>8.1</gpa>
+        <courses>
+            <course>
+                <name>Introduction to Programming</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Database Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Statistics and Probability</name>
+            </course>
+            <course>
+                <name>Software Engineering Principles</name>
+            </course>
+            <course>
+                <name>Cloud Computing</name>
+            </course>
+            <course>
+                <name>Technical Communication</name>
+            </course>
+        </courses>
+    </student>
+    <student>
+        <id>10</id>
+        <first-name>Liam</first-name>
+        <last-name>Anderson</last-name>
+        <status>false</status>
+        <gpa>7.5</gpa>
+        <courses>
+            <course>
+                <name>Data Structures and Algorithms</name>
+            </course>
+            <course>
+                <name>Object-Oriented Programming</name>
+            </course>
+            <course>
+                <name>Web Services and Distributed Systems</name>
+            </course>
+            <course>
+                <name>Computer Networks</name>
+            </course>
+            <course>
+                <name>Operating Systems</name>
+            </course>
+            <course>
+                <name>Calculus I</name>
+            </course>
+            <course>
+                <name>Discrete Mathematics</name>
+            </course>
+            <course>
+                <name>Software Engineering Principles</name>
+            </course>
+            <course>
+                <name>Cybersecurity Fundamentals</name>
+            </course>
+            <course>
+                <name>Technical Communication</name>
+            </course>
+        </courses>
+    </student>
+</students>

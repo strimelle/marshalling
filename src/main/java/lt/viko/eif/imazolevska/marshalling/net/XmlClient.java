@@ -12,6 +12,8 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.Socket;
 import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Path;
 
 @Component
 public class XmlClient {
@@ -32,23 +34,19 @@ public class XmlClient {
             }
 
             String xml = buffer.toString(StandardCharsets.UTF_8);
-
-            Students studentList = transformer.transformToPOJO(xml);
+            Path file = Files.writeString(Path.of("received.xml"), xml);
+            Students studentList = transformer.transformToPOJO(file.toString());
 
 
             for(Student student : studentList.getStudents()){
 
                 System.out.println("ID: " + student.getId()
                         + ", Name: " + student.getFirstName() + " " + student.getLastName()
+                        + ", Status: " + student.getStatus()
+                        + ", Gpa: " + student.getGpa()
                         + ", Courses: " + student.getCourses().size());
             }
-
-
-
-
         }
 
     }
-
-
 }

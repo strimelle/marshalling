@@ -10,6 +10,8 @@
                             <xs:element name="id" type="xs:string"/>
                             <xs:element name="first-name" type="xs:string"/>
                             <xs:element name="last-name" type="xs:string"/>
+                            <xs:element name="status" type="xs:boolean"/>
+                            <xs:element name="gpa" type="xs:float"/>
                             <xs:element name="courses">
                                 <xs:complexType>
                                     <xs:sequence>

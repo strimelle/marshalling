@@ -18,6 +18,12 @@ public class Student {
     @XmlElement(name = "last-name")
     private String lastName;
 
+    @XmlElement(name = "status")
+    private boolean status;
+
+    @XmlElement(name = "gpa")
+    private float gpa;
+
     @XmlElementWrapper(name = "courses")
     @XmlElement(name = "course")
     private List<Course> courses;
@@ -58,5 +64,19 @@ public class Student {
         this.courses = courses;
     }
 
+    public boolean getStatus() {
+        return status;
+    }
 
+    public void setStatus(boolean status) {
+        this.status = status;
+    }
+
+    public float getGpa() {
+        return gpa;
+    }
+
+    public void setGpa(float gpa) {
+        this.gpa = gpa;
+    }
 }

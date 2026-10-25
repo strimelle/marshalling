@@ -11,6 +11,7 @@ public class Course{
     @XmlElement(name = "name")
     private String name;
 
+
     public Course() {
     }
 
