@@ -35,6 +35,6 @@ public class XmlServerRunner implements CommandLineRunner {
 
     private Students loadStudentsFromFile() throws JAXBException {
         JaxbXmlTransformer transformer = new JaxbXmlTransformer();
-        return transformer.transformToPOJO("/home/ieva/IdeaProjects/marshalling/src/main/resources/XML/students.xml");
+        return transformer.transformToPOJO("src/main/resources/XML/students.xml");
     }
 }
