@@ -22,8 +22,8 @@ class MarshalingControllerTest {
     @Test
     void receiveCallsClientAndReturnsConfirmation() throws Exception {
 
-        String atsakymas = controller.receive();
-        assertEquals("Received.", atsakymas);
+        String response = controller.receive();
+        assertEquals("Received.", response);
         verify(xmlClient).receive();
     }
 }

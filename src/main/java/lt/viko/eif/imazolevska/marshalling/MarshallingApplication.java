@@ -4,7 +4,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Entry point of the marshalling application.
+ * Entry point of the marshaling application.
  * <p>
  * Starts the Spring Boot context, which creates all components,
  * launches the embedded web server and runs the XML server

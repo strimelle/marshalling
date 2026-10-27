@@ -17,11 +17,12 @@ public interface XmlTransformer {
     String transformToXML(Students studentList) throws JAXBException;
 
     /**
-     * Reads an XML file and transforms it to a students object.
+     * Reads an XML file, validates it against the XSD schema
+     * and transforms it to a students object.
      *
      * @param xml path to the XML file
      * @return students object
-     * @throws JAXBException if the transformation fails
+     * @throws JAXBException if the file does not match the XSD schema or the transformation fails
      */
     Students transformToPOJO(String xml) throws JAXBException;
 }

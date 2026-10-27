@@ -53,9 +53,5 @@ class XmlServerClientTest {
 
         assertTrue(Files.readString(Path.of("received.xml")).contains("<students/>"));
         verify(transformer).transformToPOJO("received.xml");
-        //KAS (mock'as) padarė
-        // KA (metodas, kuris turėjo būti iškviestas;) su
-        // KUO (kokia reikšmė buvo paduota į tą metodą (jei metodas jos neturi, skliaustai tušti))
-
     }
 }
