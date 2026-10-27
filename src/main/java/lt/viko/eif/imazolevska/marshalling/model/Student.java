@@ -1,6 +1,9 @@
 package lt.viko.eif.imazolevska.marshalling.model;
 
-import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
+import jakarta.xml.bind.annotation.XmlElementWrapper;
 
 import java.util.List;
 
@@ -20,10 +23,14 @@ public class Student {
 
     @XmlElement(name = "last-name")
     private String lastName;
-    /** Whether the student is currently active. */
+    /**
+     * Whether the student is currently active.
+     */
     @XmlElement(name = "status")
     private boolean status;
-    /** Grade point average of the student. */
+    /**
+     * Grade point average of the student.
+     */
     @XmlElement(name = "gpa")
     private float gpa;
 
@@ -31,7 +38,9 @@ public class Student {
     @XmlElement(name = "course")
     private List<Course> courses;
 
-    /** Creates an empty student. Required by JAXB. */
+    /**
+     * Creates an empty student. Required by JAXB.
+     */
     public Student() {
     }
 

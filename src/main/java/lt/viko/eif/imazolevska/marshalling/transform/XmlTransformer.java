@@ -2,6 +2,7 @@ package lt.viko.eif.imazolevska.marshalling.transform;
 
 import jakarta.xml.bind.JAXBException;
 import lt.viko.eif.imazolevska.marshalling.model.Students;
+
 /**
  * Transforms {@link Students} objects to XML and back.
  */
@@ -14,6 +15,7 @@ public interface XmlTransformer {
      * @throws JAXBException if the transformation fails
      */
     String transformToXML(Students studentList) throws JAXBException;
+
     /**
      * Reads an XML file and transforms it to a students object.
      *

@@ -1,11 +1,7 @@
 package lt.viko.eif.imazolevska.marshalling;
 
-import lt.viko.eif.imazolevska.marshalling.model.Student;
-import lt.viko.eif.imazolevska.marshalling.transform.JaxbXmlTransformer;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
-import java.util.ArrayList;
 
 /**
  * Entry point of the marshalling application.
@@ -17,15 +13,15 @@ import java.util.ArrayList;
 @SpringBootApplication
 public class MarshallingApplication {
 
-	/**
-	 * Starts the Spring Boot application.
-	 *
-	 * @param args command line arguments passed to Spring Boot
-	 */
+    /**
+     * Starts the Spring Boot application.
+     *
+     * @param args command line arguments passed to Spring Boot
+     */
 
-	public static void main(String[] args) {
-		SpringApplication.run(MarshallingApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(MarshallingApplication.class, args);
+    }
 }
 
 

@@ -24,22 +24,23 @@ public class XmlClient {
 
     @Autowired
     private XmlTransformer transformer;
+
     /**
      * Receives the XML from the server, saves it to {@code received.xml},
      * transforms it to objects and prints the students.
      *
-     * @throws IOException if the connection or file writing fails
+     * @throws IOException   if the connection or file writing fails
      * @throws JAXBException if the transformation fails
      */
     public void receive() throws IOException, JAXBException {
 
-        try (Socket clientSocket = new Socket("localhost", 8383)){
+        try (Socket clientSocket = new Socket("localhost", 8383)) {
             InputStream clientOutput = clientSocket.getInputStream();
 
             ByteArrayOutputStream buffer = new ByteArrayOutputStream();
             byte[] chunk = new byte[1024];
             int bytesRead;
-            while ((bytesRead = clientOutput.read(chunk)) != -1){
+            while ((bytesRead = clientOutput.read(chunk)) != -1) {
                 buffer.write(chunk, 0, bytesRead);
             }
 
@@ -48,7 +49,7 @@ public class XmlClient {
             Students studentList = transformer.transformToPOJO(file.toString());
 
 
-            for(Student student : studentList.getStudents()){
+            for (Student student : studentList.getStudents()) {
 
                 System.out.println("ID: " + student.getId()
                         + ", Name: " + student.getFirstName() + " " + student.getLastName()

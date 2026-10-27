@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<students>
+    <student>
+        <id>001</id>
+        <last-name>Johansson</last-name>
+        <status>true</status>
+        <gpa>9.1</gpa>
+        <courses>
+            <course>
+                <name>Math</name>
+            </course>
+        </courses>
+    </student>
+</students>

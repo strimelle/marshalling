@@ -9,8 +9,7 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class JaxbXmlTransformerTest {
 
@@ -48,7 +47,7 @@ class JaxbXmlTransformerTest {
     @Test
     void transformToPojoReadsStudentsFromFile() throws JAXBException {
 
-        Students studentList = transformer.transformToPOJO("src/test/resources/XML/test-students.xml");
+        Students studentList = transformer.transformToPOJO("src/test/resources/xml/test-students.xml");
 
         assertEquals(10, studentList.getStudents().size());
         assertEquals("Emma", studentList.getStudents().get(0).getFirstName());
@@ -57,4 +56,8 @@ class JaxbXmlTransformerTest {
 
     }
 
+    @Test
+    void transformToPojoThrowsWhenXmlDoesNotMatchSchema() {
+        assertThrows(JAXBException.class, () -> transformer.transformToPOJO("src/test/resources/xml/invalid-students.xml"));
+    }
 }

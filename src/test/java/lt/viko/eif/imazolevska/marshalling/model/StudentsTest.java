@@ -5,7 +5,8 @@ import org.junit.jupiter.api.Test;
 import java.util.ArrayList;
 import java.util.List;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
 class StudentsTest {
     @Test
@@ -35,5 +36,4 @@ class StudentsTest {
         assertEquals("Lina", group.getStudents().get(0).getFirstName());
         assertEquals("Migle", group.getStudents().get(1).getFirstName());
     }
-
 }

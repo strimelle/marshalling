@@ -6,10 +6,13 @@ import jakarta.xml.bind.Marshaller;
 import jakarta.xml.bind.Unmarshaller;
 import lt.viko.eif.imazolevska.marshalling.model.Students;
 import org.springframework.stereotype.Service;
+import org.xml.sax.SAXException;
 
+import javax.xml.XMLConstants;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
-import java.io.StringReader;
 import java.io.StringWriter;
 
 /**
@@ -31,6 +34,15 @@ public class JaxbXmlTransformer implements XmlTransformer {
 
     }
 
+    /**
+     * Reads an XML file, validates it against the XSD schema
+     * and transforms it to a students object.
+     *
+     * @param xml path to the XML file
+     * @return students object
+     * @throws JAXBException if the file does not match the XSD schema or the transformation fails
+     */
+
     @Override
     public Students transformToPOJO(String xml) throws JAXBException {
 
@@ -44,6 +56,23 @@ public class JaxbXmlTransformer implements XmlTransformer {
         JAXBContext jaxbContext = JAXBContext.newInstance(Students.class);
 
         Unmarshaller jaxbUnmarshaller = jaxbContext.createUnmarshaller();
+        jaxbUnmarshaller.setSchema(loadSchema());
         return (Students) jaxbUnmarshaller.unmarshal(reader);
+    }
+
+    /**
+     * Loads the XSD schema used to validate XML documents before unmarshalling.
+     *
+     * @return XSD schema from the resources folder
+     * @throws JAXBException if the schema cannot be loaded
+     */
+    private Schema loadSchema() throws JAXBException {
+        try {
+            SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            return schemaFactory.newSchema(getClass().getResource("/XML/xsd-schema.xsd"));
+        } catch (SAXException e) {
+            throw new JAXBException("Cannot load XSD schema", e);
+        }
+
     }
 }

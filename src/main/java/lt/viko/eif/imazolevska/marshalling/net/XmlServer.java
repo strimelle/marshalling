@@ -28,7 +28,7 @@ public class XmlServer {
      * prints it and sends it to the client.
      *
      * @param studentList students to send
-     * @throws IOException if the connection fails
+     * @throws IOException   if the connection fails
      * @throws JAXBException if the transformation fails
      */
 

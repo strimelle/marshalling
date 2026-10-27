@@ -1,7 +1,9 @@
 package lt.viko.eif.imazolevska.marshalling.model;
 
 
-import jakarta.xml.bind.annotation.*;
+import jakarta.xml.bind.annotation.XmlAccessType;
+import jakarta.xml.bind.annotation.XmlAccessorType;
+import jakarta.xml.bind.annotation.XmlElement;
 
 
 /**
@@ -10,8 +12,10 @@ import jakarta.xml.bind.annotation.*;
  * Mapped to the {@code <course>} element in the XML document.
  */
 @XmlAccessorType(XmlAccessType.FIELD)
-public class Course{
-    /** Name of the course, mapped to the {@code <name>} element. */
+public class Course {
+    /**
+     * Name of the course, mapped to the {@code <name>} element.
+     */
     @XmlElement(name = "name")
     private String name;
 

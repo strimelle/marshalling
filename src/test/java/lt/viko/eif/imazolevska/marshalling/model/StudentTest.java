@@ -124,7 +124,4 @@ class StudentTest {
         student.setGpa(8.7f);
         assertEquals(8.7f, student.getGpa());
     }
-
-
-
 }
